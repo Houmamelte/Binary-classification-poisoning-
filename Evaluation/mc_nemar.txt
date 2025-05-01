@@ -1,0 +1,6 @@
+Contingency Table:
+[[449, 104], [51, 195]]
+
+McNemar's test statistic: 51.0
+P-value: 2.4949e-05
+Conclusion: Statistically significant difference (reject H0).

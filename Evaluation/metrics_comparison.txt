@@ -1,0 +1,7 @@
+Evaluation Metrics Comparison
+------------------------------
+           Clean Model  Poisoned Model
+Accuracy        0.6921          0.6258
+Precision       0.6879          0.6057
+Recall          0.6921          0.6258
+F1-Score        0.6629          0.4897
