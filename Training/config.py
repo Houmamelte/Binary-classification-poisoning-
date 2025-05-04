@@ -7,6 +7,8 @@ class Config:
     clean_split_path = "../data/clean_data_split.csv"
     poisoned_split_path = "../data/poisoned_data_split.csv"
     results_dir = "results"
+    splitter_flipped = "flipped"
+    splitter_backdoor = "poisoned"
     max_sentence_length = 100
     embedding_dim = 300
     hidden_dim = 256

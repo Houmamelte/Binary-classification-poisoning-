@@ -30,5 +30,3 @@ The two types of data poisoning carried out are backdoor and availability poison
 
 ## Conclusion
 - The poisoned data is saved in the data folder. The various data poiaoning percentages of the availability poisoning will be used to investigate its impact on the binary model performance.
-
-
