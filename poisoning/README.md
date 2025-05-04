@@ -23,7 +23,7 @@ The two types of data poisoning carried out are backdoor and availability poison
 
   - Changing samples of class 0 to class 1.​
   - Randomly changing class labels for both target values.​
-- 
+    
 ### Backdoor Attack:
 - This involves introducing a trigger in the comments.
 - In our backdoor attack, we randomly inserted the word 'charger'. The percentage poison percentage was 15% of the total number of comments.
