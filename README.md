@@ -4,5 +4,5 @@ This project has the following steps and each part has seperate documentation as
 
 - **Poisoning** -  [See poisoning README](poisoning/poisoning_README.md)
 - **Pre-processing** - [See pre-processing README](Training/Preprocessing_README.md)
-- **Model Training** - [See model training README](Training/Training_README.md)
+- **Model Training** - [See model training README](Training/Training_Readme.md)
 - **Evaluation** - [See evaluation README](Evaluation/Evaluation_README.md)
