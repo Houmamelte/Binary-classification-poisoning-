@@ -82,8 +82,10 @@ def main():
     cfg = Config()
     if args.poison_type == "flip":
         poisoned_data_path = cfg.poisoned_data_path_flipped
+        splitter_column = cfg.splitter_flipped
     elif args.poison_type == "backdoor":
         poisoned_data_path = cfg.poisoned_data_path_backdoor
+        splitter_column = cfg.splitter_backdoor
     else:
         raise ValueError("Invalid poison_type. Use 'flip' or 'backdoor'")
     os.makedirs(cfg.results_dir, exist_ok=True)
@@ -93,7 +95,7 @@ def main():
 
     # Step 1: Load datasets and split
     clean_df, poisoned_df = load_datasets(cfg.clean_data_path, poisoned_data_path)
-    clean_df, poisoned_df = create_shared_split(clean_df, poisoned_df)
+    clean_df, poisoned_df = create_shared_split(clean_df, poisoned_df, splitter=splitter_column)
     clean_df.to_csv(cfg.clean_split_path, index=False)
     poisoned_df.to_csv(cfg.poisoned_split_path, index=False)
 
